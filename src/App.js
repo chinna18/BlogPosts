@@ -6,7 +6,6 @@ import Posts from './Posts';
 import Home from './Home';
 import ViewPost from './ViewPost';
 
-
 export default function App() {
   return (
     <BrowserRouter>
