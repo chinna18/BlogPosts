@@ -3,7 +3,7 @@ import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios';
 //import AddPost from './AddPost';
 
-export default function Posts() {
+export default function Posts(props) {
   const history = useHistory();
   const [id, setId] = useState('');
   const [users, setUsers] = useState([]);
@@ -14,6 +14,7 @@ export default function Posts() {
   const [body, setBody] = useState('');
   const [comments, setComments] = useState([]);
   const [posts, setPosts] = useState([]);
+  console.log(props)
 
   const getUsers = async () => {
     const response = await axios.get(
